@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Player!</title>
+    <link rel="icon" type="image/png" href="img/cardlogo.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player1">
+        <div class="carder">
+          <div class="card1" id="card1"></div>
+          <div class="card1" id="card2"></div>
+          <div class="card1" id="card3"></div>
+          <div class="card1" id="card4"></div>
+          <div class="card1" id="card5"></div>
+        </div>
+        <div class="btncontainer">
+          <button id="btndraw1" class="btn" onclick="drawplayer1()" disabled>
+            Draw1
+          </button>
+          <button id="btnskip1" class="btn" onclick="skipplayer1()" disabled>
+            Skip1
+          </button>
+          <div id="btnshow1" class="btnshow">Player1 Turn
+          </div>
+        </div>
+      </div>
+
+      <div class="player2">
+        <div class="carder2">
+          <div class="card2" id="card6"></div>
+          <div class="card2" id="card7"></div>
+          <div class="card2" id="card8"></div>
+          <div class="card2" id="card9"></div>
+          <div class="card2" id="card10"></div>
+        </div>
+        <div class="btncontainer2">
+          <button id="btndraw2" class="btn" onclick="drawplayer2()" disabled>
+            Draw2
+          </button>
+          <button id="btnskip2" class="btn" onclick="skipplayer2()" disabled>
+            Skip2
+          </button>
+          <div id="btnshow2" class="btnshow">Player2 Turn
+          </div>
+        </div>
+      </div>
+
+      <div class="player3">
+        <div class="carder3">
+          <div class="card3" id="card11"></div>
+          <div class="card3" id="card12"></div>
+          <div class="card3" id="card13"></div>
+          <div class="card3" id="card14"></div>
+          <div class="card3" id="card15"></div>
+        </div>
+        <div class="btncontainer3">
+          <button id="btndraw3" class="btn" onclick="drawplayer3()" disabled>
+            Draw3
+          </button>
+          <button id="btnskip3" class="btn" onclick="skipplayer3()" disabled>
+            Skip3
+          </button>
+          <div id="btnshow3" class="btnshow">Player3 Turn
+          </div>
+        </div>
+      </div>
+
+      <div class="player4">
+        <div class="carder4">
+          <div class="card4" id="card16"></div>
+          <div class="card4" id="card17"></div>
+          <div class="card4" id="card18"></div>
+          <div class="card4" id="card19"></div>
+          <div class="card4" id="card20"></div>
+        </div>
+        <div class="btncontainer4">
+          <button id="btndraw4" class="btn" onclick="drawplayer4()" disabled>
+            Draw4
+          </button>
+          <div id="btnshow4" class="btnshow">Bookie Turn
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="start">
+      <button id="btnstart" class="btnstart activestart" onclick="start()">
+        Start
+      </button>
+      <button
+        id="btnstop"
+        class="btnstop inactivestop"
+        onclick="stop()"
+        disabled
+      >
+        Stop
+      </button>
+      <button id="btncheck1" class="btn" onclick="check1()" disabled>
+        Check1
+      </button>
+      <button id="btncheck2" class="btn" onclick="check2()" disabled>
+        Check2
+      </button>
+      <button id="btncheck3" class="btn" onclick="check3()" disabled>
+        Check3
+      </button>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
